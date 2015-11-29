@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Andrew's 2048</title>
+    <link href="/App/styles/bootstrap.css" rel="stylesheet" />
+    <link href="/App/styles/main.css" rel="stylesheet" />
+</head>
+<body ng-app="GameApp">
+    <div class="container">
+        <div id="content" ng-controller='GameCtrl'>
+            <!-- heading -->
+            <div class="row">
+                <h2 class="title">Andrew's 2048</h2>
+                <div class="scores-container">
+                    <div class="score">{{gameLogic.currentScore}}</div>
+                    <div class="high-score">{{gameLogic.highScore}}</div>
+                </div>
+            </div>
+            <!-- instructions -->
+            <div id="instructions" class="row">
+                Join the numbers and get to the <strong>2048</strong> tile!
+                <button ng-click='refresh()' class="restart-button">Refresh board</button>
+            </div>
+
+            <div id="board-container">
+                <div grid ng-model='gameLogic' class="row"></div>
+            </div>
+            <p>
+                <small>
+                    <strong>How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+                </small>
+            </p>
+        </div>
+    </div>
+
+    <script src="/App/bower_components/angular/angular.js"></script>
+    <script src="/App/bower_components/angular-route/angular-route.js"></script>
+    <script src="/App/Controllers/gameContoller.js"></script>
+    <script src="/App/Services/gridLogicService.js"></script>
+    <script src="/App/Directives/gridDirective.js"></script>
+    <script src="/App/Directives/tileDirective.js"></script>
+    <script src="/App/Services/inputHandlerService.js"></script>
+    <script src="/App/Services/gameLogicService.js"></script>
+</body>
+</html>

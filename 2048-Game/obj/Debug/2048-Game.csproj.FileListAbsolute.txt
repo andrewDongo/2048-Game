@@ -1,0 +1,6 @@
+F:\Projects\2048-Game\2048-Game\bin\2048-Game.dll.config
+F:\Projects\2048-Game\2048-Game\bin\2048-Game.dll
+F:\Projects\2048-Game\2048-Game\bin\2048-Game.pdb
+F:\Projects\2048-Game\2048-Game\obj\Debug\2048-Game.csprojResolveAssemblyReference.cache
+F:\Projects\2048-Game\2048-Game\obj\Debug\2048-Game.dll
+F:\Projects\2048-Game\2048-Game\obj\Debug\2048-Game.pdb
